@@ -8,9 +8,9 @@ interface IProps {
 
 const PurchaseCard = ({ source, title, content }: IProps) => {
     return (
-        <div className="bg-[#0B091D] flex justify-center items-center max-w-[400px] mx-4 py-2 rounded-2xl border-2 border-red-600">
+        <div className="bg-[#0B091D] flex justify-center items-center max-w-[400px] m-4 py-2 rounded-2xl border-2 border-red-600">
             <div className="mx-4 rounded-full">
-                <Image src={source} width="200px" height="200px" />
+                <Image src={source} width="150px" height="150px" />
             </div>
             <div className="flex flex-col justify-center items-left">
                 <p className="text-white">{title}</p>
