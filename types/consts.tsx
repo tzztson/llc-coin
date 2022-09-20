@@ -39,3 +39,21 @@ export const LifeFoodData = [
         "source": "/assets/icons/leek.png"
     }
 ]
+
+export const TeamData = [
+    {
+        "name": "Johnny Chiang",
+        "title": "MGRM",
+        "image": "/assets/images/face1.png",
+    },
+    {
+        "name": "Johnny Chiang",
+        "title": "MGRM",
+        "image": "/assets/images/face1.png",
+    },
+    {
+        "name": "Johnny Chiang",
+        "title": "MGRM",
+        "image": "/assets/images/face1.png",
+    }
+]
