@@ -1,6 +1,6 @@
 import { useState } from "react";
 interface IProps {
-    title: string
+    title: string;
     content: string;
 }
 
