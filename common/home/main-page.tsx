@@ -2,6 +2,7 @@ import Image from "next/image";
 import AboutSection from "./about-sec";
 import Effects from "./effect-sec";
 import IntroSection from "./intro-sec";
+import Whitepaper from "./whitepaper";
 
 const MainPage = () => {
     return (
@@ -9,6 +10,7 @@ const MainPage = () => {
             <IntroSection />
             <AboutSection />
             <Effects />
+            <Whitepaper />
         </>
     )
 }
