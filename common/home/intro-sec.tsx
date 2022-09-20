@@ -18,13 +18,13 @@ const IntroSection = () => {
             <div className="rounded-md text-white text-lg bg-gradient-to-r from-[#124064] px-10 my-8 py-3 border-[#1c537b] border-2">
                 <span >Get Started</span>
             </div>
-            <div className="absolute bottom-[-80px] left-[-40px]">
-                <Image src={"/assets/images/nav-coin.png"} width="200px" height="150px" />
+            <div className="absolute bottom-[0px] left-[-80px] z-0">
+                <Image src={"/assets/images/nav-coin.png"} width="280px" height="210px" />
             </div>
-            <div className="absolute bottom-[-4px] left-[60px]">
+            <div className="absolute bottom-[120px] left-[68px]">
                 <Image src={"/assets/images/nav-ele-coin.png"} width="50px" height="50px" />
             </div>
-            <div className="flex items-center justify-center lg:flex-row flex-col">
+            <div className="flex items-center justify-center lg:flex-row flex-col z-10">
                 {purchaseData.map(ele =>
                     <PurchaseCard
                         source={ele.image}

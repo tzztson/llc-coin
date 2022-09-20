@@ -20,4 +20,22 @@ export const purchaseData = [
         "bg": "#060a21",
         "border": "h-36 w-full rounded-md bg-gradient-to-r from-[#f6851b]  to-[#4caf50] p-1"
     }
+];
+
+export const LifeFoodData = [
+    {
+        "title": "Green Apple",
+        "content": "Prevent obesity: Compared with other fruits, apples provide negligible fat. It has almost no protein and an average 100 grams contains only 60 calories...",
+        "source": "/assets/icons/apple.png"
+    },
+    {
+        "title": "Green Apple",
+        "content": "Prevent obesity: Compared with other fruits, apples provide negligible fat. It has almost no protein and an average 100 grams contains only 60 calories...",
+        "source": "/assets/icons/bell-pepper.png"
+    },
+    {
+        "title": "Green Apple",
+        "content": "Prevent obesity: Compared with other fruits, apples provide negligible fat. It has almost no protein and an average 100 grams contains only 60 calories...",
+        "source": "/assets/icons/leek.png"
+    }
 ]

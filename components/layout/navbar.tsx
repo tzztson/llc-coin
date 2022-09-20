@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "../button";
 const Navbar = () => {
   return (
     <div className="flex items-center justify-between py-4 relative lg:px-16 px-12">
@@ -13,9 +14,7 @@ const Navbar = () => {
       <div className="lg:w-24 lg:h-24 w-16 h-16 z-40">
         <Image className="" src={"/assets/images/nav-token.png"} width="100%" height="100%" />
       </div>
-      <div className="bg-gradient-to-r from-[#1170fa] to-[#14f0ef] z-40 px-6 py-1 text-md rounded-md">
-        <span className="text-white">Connect</span>
-      </div>
+      <Button text="Connect" />
 
     </div>
   );
