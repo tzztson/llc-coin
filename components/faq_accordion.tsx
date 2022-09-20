@@ -1,7 +1,7 @@
 import { useState } from "react";
 interface IProps {
-    title: "string";
-    content: "string";
+    title: string
+    content: string;
 }
 
 const FAQAccordion = ({ title, content }: IProps) => {
