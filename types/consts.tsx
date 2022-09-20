@@ -57,3 +57,47 @@ export const TeamData = [
         "image": "/assets/images/face1.png",
     }
 ]
+
+export const FAQData = [
+    {
+        "title": "What are the benefits of digital current?",
+        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
+    }, {
+        "title": "What are the benefits of digital current?",
+        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
+    }, {
+        "title": "What are the benefits of digital current?",
+        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
+    }, {
+        "title": "What are the benefits of digital current?",
+        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
+    }, {
+        "title": "What are the benefits of digital current?",
+        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
+    }, {
+        "title": "What are the benefits of digital current?",
+        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
+    }, {
+        "title": "What are the benefits of digital current?",
+        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
+    },
+    {
+        "title": "What are the benefits of digital current?",
+        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
+    }, {
+        "title": "What are the benefits of digital current?",
+        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
+    },
+    {
+        "title": "What are the benefits of digital current?",
+        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
+    }, {
+        "title": "What are the benefits of digital current?",
+        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
+    },
+    {
+        "title": "What are the benefits of digital current?",
+        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
+    },
+
+]

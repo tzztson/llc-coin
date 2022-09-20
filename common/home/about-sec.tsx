@@ -9,7 +9,7 @@ const AboutSection = () => {
                 </div>
                 <div className="flex flex-col  max-w-[500px]">
                     <p className="mt-6"></p>
-                    <p className="uppercase text-transparent text-[16px] bg-clip-text bg-gradient-to-r from-[#1170fa] to-[#14f0ef]">About us</p>
+                    <p className="uppercase bg-clip-text bg-gradient-to-r from-[#1170fa] to-[#14f0ef] text-transparent text-sm p-2">About Us</p>
                     <div className="flex flex-col gap-y-4">
                         <p className="text-white text-[32px] leading-10">A compelling <br />value proposition</p>
                         <p className="text-white text-[12px]">LongLifeCoin (LLC) is an open source, Bitcoin-like digital currency which uses a proof of work script algorithm. The genesis block was mined on March 1st, 2014.</p>

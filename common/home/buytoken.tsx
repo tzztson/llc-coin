@@ -4,7 +4,7 @@ import Button from "../../components/button";
 const BuyToken = () => {
     return (
         <div className="my-24 flex justify-center">
-            <div className="z-20  flex justify-center items-center first-letter:border-[#627eea] rounded-2xl bg-gradient-to-r from-[#310056]  to-[#5f5fa7] gap-7 px-12 py-4">
+            <div className="z-20  flex justify-center items-center first-letter:border-[#627eea] rounded-2xl bg-gradient-to-r from-[#310056]  to-[#5f5fa7] gap-7 px-12 py-">
                 <div className="self-end z-30 justify-self-end">
                     <Image src={"/assets/images/buy-below-icon.png"} width="80px" height="80px" />
                 </div>
