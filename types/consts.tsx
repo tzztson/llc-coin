@@ -61,23 +61,23 @@ export const FAQData = [
         "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
     },
     {
-        "title": "What are the benefits of digital current?",
+        "title": "Why should I use LLC currency and how is it different from other currencies?",
         "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
     },
     {
-        "title": "What are the benefits of digital current?",
+        "title": "How long has digital currency existed?",
         "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
     },
     {
-        "title": "What are the benefits of digital current?",
+        "title": "How is LLC helping entrepreneurs?",
         "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
     },
     {
-        "title": "What are the benefits of digital current?",
+        "title": "How will digital currency affect daily life in the US and around the world?",
         "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
     },
     {
-        "title": "What are the benefits of digital current?",
+        "title": "How do I convert my LLC currency into US dollars or other currencies?",
         "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
     },
 

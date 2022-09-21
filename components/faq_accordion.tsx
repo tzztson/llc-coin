@@ -11,7 +11,7 @@ const FAQAccordion = ({ title, content }: IProps) => {
     }
     return (
         <div className="flex flex-col py-2  items-center justify-center mx-4" >
-            < div className="p-4 bg-[#14173c] w-[400px]  rounded flex justify-between items-center" onClick={handleClick}>
+            < div className="h-16 p-4 bg-[#14173c] w-[400px]  rounded flex justify-between items-center" onClick={handleClick}>
                 <h4 className="font-medium text-sm text-white">{title}</h4>
                 <div className={isopen ? "rotate-180" : ""}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 fill-white" fill="white" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
