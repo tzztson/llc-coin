@@ -6,14 +6,14 @@ export const purchaseData = [
         "border": "rounded-md bg-gradient-to-r from-[#f6851b]  to-[#88ecd4] p-[1px]"
     },
     {
-        "title": "Download Metamask",
-        "content": "The Chrome Metamask extension will allow you to make purchases with Ethereum. If you are on mobile, please use the Metamask app.",
+        "title": "Add some Eth",
+        "content": "You can purhcase Ethereum through your Metamask wallet using Wyre or send Ethereum from an exchange like Coinbase.",
         "image": "/assets/icons/ethereum.gif",
         "border": "rounded-md bg-gradient-to-r from-[#627eea]  to-[#88ecd4] p-[1px]"
     },
     {
-        "title": "Download Metamask",
-        "content": "The Chrome Metamask extension will allow you to make purchases with Ethereum. If you are on mobile, please use the Metamask app.",
+        "title": "PURCHASE OUR LLC",
+        "content": "Connect your Metamask to our website. Once connected, you will be able to purchase our LLC and approve the transaction.",
         "image": "/assets/icons/coin.svg",
         "border": "rounded-md bg-gradient-to-r from-[#5fdacb]  to-[#88ecd4] p-[1px]"
     }
