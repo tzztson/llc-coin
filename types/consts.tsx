@@ -26,13 +26,13 @@ export const LifeFoodData = [
         "source": "/assets/icons/apple.png"
     },
     {
-        "title": "Green Apple",
-        "content": "Prevent obesity: Compared with other fruits, apples provide negligible fat. It has almost no protein and an average 100 grams contains only 60 calories...",
+        "title": "Green Pepper",
+        "content": "The strong spicy taste of pepper can stimulate the secretion of saliva and gastric juice, promote intestinal peristalsis and help digestion...",
         "source": "/assets/icons/bell-pepper.png"
     },
     {
-        "title": "Green Apple",
-        "content": "Prevent obesity: Compared with other fruits, apples provide negligible fat. It has almost no protein and an average 100 grams contains only 60 calories...",
+        "title": "Celery",
+        "content": "Cucumber is a vegetable that can blindly beautify, and is called \"beauty agent in the kitchen\". Regular consumption of cucumber can not only effectively resist skin...",
         "source": "/assets/icons/leek.png"
     }
 ]
@@ -59,36 +59,20 @@ export const FAQData = [
     {
         "title": "What are the benefits of digital current?",
         "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
-    }, {
-        "title": "What are the benefits of digital current?",
-        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
-    }, {
-        "title": "What are the benefits of digital current?",
-        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
-    }, {
-        "title": "What are the benefits of digital current?",
-        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
-    }, {
-        "title": "What are the benefits of digital current?",
-        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
-    }, {
-        "title": "What are the benefits of digital current?",
-        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
-    }, {
+    },
+    {
         "title": "What are the benefits of digital current?",
         "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
     },
     {
         "title": "What are the benefits of digital current?",
         "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
-    }, {
-        "title": "What are the benefits of digital current?",
-        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
     },
     {
         "title": "What are the benefits of digital current?",
         "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
-    }, {
+    },
+    {
         "title": "What are the benefits of digital current?",
         "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
     },
