@@ -2,10 +2,6 @@ import Image from "next/image";
 import PurchaseCard from "../../components/purchase_card";
 import { purchaseData } from "../../types/consts";
 
-const borderColors = [
-    "#f6851b", "#627eea", "#5fdacb"
-]
-
 const IntroSection = () => {
     return (
         <div className="flex flex-col items-center justify-center relative">
@@ -31,13 +27,12 @@ const IntroSection = () => {
             <div className="flex items-center justify-center lg:flex-row flex-col z-10 gap-4">
                 {purchaseData.map((ele, index) => {
                     return (
-                        <div className={`rounded-xl bg-gradient-to-r from-[${borderColors[index]}]  to-[#88ecd4] p-[1px]`}>
-                            <PurchaseCard
-                                source={ele.image}
-                                title={ele.title}
-                                content={ele.content}
-                            />
-                        </div>
+                        <PurchaseCard
+                            source={ele.image}
+                            title={ele.title}
+                            content={ele.content}
+                            border={ele.border}
+                        />
                     )
                 }
 
