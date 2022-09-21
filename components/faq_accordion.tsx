@@ -20,7 +20,7 @@ const FAQAccordion = ({ title, content }: IProps) => {
                 </div>
             </div >
             <div className={!isopen ? "hidden" : "max-w-[400px]  bg-[#a3a7da] p-4"}>
-                <h4 className=" text-sm text-white">{content}</h4>
+                <h4 className="p-0 text-sm text-white">{content}</h4>
             </div>
         </div >
     )
