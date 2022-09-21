@@ -13,10 +13,10 @@ const MemberCard = ({ image, name, title }: IProps) => {
             </div>
             <p className="text-white mb-2">{name}</p>
             <p className="text-white mb-8">{title}</p>
-            <div className="flex justify-center items-center gap-10">
-                <div className="border-[1px] w-10 h-10 flex items-center justify-center border-[#fefefe]"><Image src={"/assets/icons/facebook.png"} width="24px" height="24px" /></div>
-                <div className="border-[1px] w-10 h-10 flex items-center justify-center border-[#fefefe]"><Image src={"/assets/icons/twitter.png"} width="24px" height="24px" /></div>
-                <div className="border-[1px] w-10 h-10 flex items-center justify-center border-[#fefefe]"><Image src={"/assets/icons/indeed.png"} width="24px" height="24px" /></div>
+            <div className="flex justify-center items-center gap-5">
+                <div className="border-[1px] rounded-lg w-10 h-10 flex items-center justify-center border-[#fefefe]"><Image src={"/assets/icons/facebook.png"} width="24px" height="24px" /></div>
+                <div className="border-[1px] rounded-lg w-10 h-10 flex items-center justify-center border-[#fefefe]"><Image src={"/assets/icons/twitter.png"} width="24px" height="24px" /></div>
+                <div className="border-[1px] rounded-lg w-10 h-10 flex items-center justify-center border-[#fefefe]"><Image src={"/assets/icons/indeed.png"} width="24px" height="24px" /></div>
             </div>
         </div>
     )
