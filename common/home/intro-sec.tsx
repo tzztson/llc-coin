@@ -25,7 +25,7 @@ const IntroSection = () => {
                 <Image src={"/assets/images/nav-ele-coin.png"} width="50px" height="50px" />
             </div>
             <div className="flex items-center justify-center lg:flex-row flex-col z-10 gap-4">
-                {purchaseData.map((ele, index) => {
+                {purchaseData.map((ele) => {
                     return (
                         <PurchaseCard
                             source={ele.image}
