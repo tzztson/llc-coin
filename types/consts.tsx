@@ -47,13 +47,13 @@ export const TeamData = [
         "image": "/assets/images/face1.png",
     },
     {
-        "name": "Johnny Chiang",
-        "title": "MGRM",
+        "name": "Jie Hu",
+        "title": "Full-Stack Developer",
         "image": "/assets/images/face1.png",
     },
     {
-        "name": "Johnny Chiang",
-        "title": "MGRM",
+        "name": "Derrick Smith",
+        "title": "Lead Designer",
         "image": "/assets/images/face1.png",
     }
 ]
