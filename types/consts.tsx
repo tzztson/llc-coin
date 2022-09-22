@@ -78,7 +78,7 @@ export const FAQData = [
     },
     {
         "title": "How do I convert my LLC currency into US dollars or other currencies?",
-        "content": "What are the benefits of digital current?What are the benefits of digital current?What are the benefits of digital current?"
+        "content": "Loerm LLC token will become Lorem Lorem"
     },
 
 ]
