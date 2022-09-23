@@ -14,7 +14,7 @@ export const purchaseData = [
     {
         "title": "PURCHASE OUR LLC",
         "content": "Connect your Metamask to our website. Once connected, you will be able to purchase our LLC and approve the transaction.",
-        "image": "/assets/icons/coin.svg",
+        "image": "/assets/icons/about-token.png",
         "border": "rounded-md bg-gradient-to-r from-[#5fdacb]  to-[#88ecd4] p-[1px]"
     }
 ];
@@ -46,12 +46,12 @@ export const TeamData = [
     {
         "name": "Jie Hu",
         "title": "Full-Stack Developer",
-        "image": "/assets/images/face1.png",
+        "image": "/assets/images/face2.png",
     },
     {
         "name": "Derrick Smith",
         "title": "Lead Designer",
-        "image": "/assets/images/face1.png",
+        "image": "/assets/images/face3.png",
     }
 ]
 
