@@ -14,7 +14,7 @@ export const purchaseData = [
     {
         "title": "PURCHASE OUR LLC",
         "content": "Connect your Metamask to our website. Once connected, you will be able to purchase our LLC and approve the transaction.",
-        "image": "/assets/icons/coin.svg",
+        "image": "/assets/icons/about-token.png",
         "border": "rounded-md bg-gradient-to-r from-[#5fdacb]  to-[#88ecd4] p-[1px]"
     }
 ];
