@@ -46,12 +46,12 @@ export const TeamData = [
     {
         "name": "Jie Hu",
         "title": "Full-Stack Developer",
-        "image": "/assets/images/face1.png",
+        "image": "/assets/images/face2.png",
     },
     {
         "name": "Derrick Smith",
         "title": "Lead Designer",
-        "image": "/assets/images/face1.png",
+        "image": "/assets/images/face3.png",
     }
 ]
 

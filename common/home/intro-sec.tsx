@@ -4,7 +4,7 @@ import { purchaseData } from "../../types/consts";
 
 const IntroSection = () => {
     return (
-        <div className="flex flex-col items-center justify-center relative">
+        <div className="flex flex-col items-center justify-center relative z-20">
             <p className="text-white uppercase text-[18px]  pb-[20px] z-50">Welcome to the LongLife Coin</p>
             <p className="max-w-[900px] p-2 leading-[60px] text-center  font-[kb3spiderpatch] text-transparent text-4xl bg-clip-text bg-gradient-to-r from-[#1170fa] to-[#14f0ef]">
                 Reflecting the wishes of people who wish for longevity
