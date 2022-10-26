@@ -1,9 +1,6 @@
 import LifeFoodCard from "../../components/life_food_card";
 import { LifeFoodData } from "../../types/consts";
 import Image from "next/image";
-import Carousel from "react-multi-carousel";
-
-import "react-multi-carousel/lib/styles.css";
 
 const Effects = () => {
   const responsive = {
@@ -54,7 +51,7 @@ const Effects = () => {
                 ? "bg-[url('/assets/images/card-ground-1.png')] rounded-2xl"
                 : "bg-[url('/assets/images/card-ground-2.png')] rounded-2xl";
             return (
-              <div className={`${bgColor} bg-cover`}>
+              <div className={`${bgColor} bg-cover`} key={`${ele}1`}>
                 <LifeFoodCard
                   title={ele.title}
                   content={ele.content}
@@ -73,12 +70,6 @@ const Effects = () => {
           />
         </div>
       </div>
-      <Carousel responsive={responsive}>
-        <div>Item 1</div>
-        <div>Item 2</div>
-        <div>Item 3</div>
-        <div>Item 4</div>
-      </Carousel>
     </div>
   );
 };
