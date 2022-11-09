@@ -9,17 +9,16 @@ import TeamSection from "./team-sec";
 import Whitepaper from "./whitepaper";
 
 const MainPage = () => {
-    return (
-        <>
-            <IntroSection />
-            <AboutSection />
-            <Effects />
-            <Whitepaper />
-            <BuyToken />
-            <TeamSection />
-            <FAQSection />
-            <HolderSection />
-        </>
-    )
-}
+  return (
+    <>
+      <AboutSection />
+      <Effects />
+      <Whitepaper />
+      <BuyToken />
+      <TeamSection />
+      <FAQSection />
+      <HolderSection />
+    </>
+  );
+};
 export default MainPage;

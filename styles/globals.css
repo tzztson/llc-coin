@@ -20,6 +20,13 @@ a {
   box-sizing: border-box;
 }
 
+.image-control {
+  @apply lg:w-52 lg:h-40 w-40 h-32
+}
+.intro-control {
+ @apply m-0 top-0 left-0 translate-x-0.5 translate-y-0.5
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

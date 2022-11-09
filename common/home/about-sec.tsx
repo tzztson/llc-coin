@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <div className="mt-16 flex justify-between items-center  lg:px-32  pt-20">
+    <div className="flex justify-center md:justify-around items-center flex-wrap p-4">
       <div className=" flex lg:flex-row flex-col">
         <div className="md:mx-6 md:w-[80px] md:h-[80px] w-[120px] h-[120px]">
           <Image
@@ -11,15 +11,14 @@ const AboutSection = () => {
             height="100%"
           />
         </div>
-        <div className="flex flex-col  max-w-[500px]">
+        <div className="flex flex-col  max-w-[600px]">
           <p className="mt-6"></p>
           <p className="uppercase bg-clip-text bg-gradient-to-r from-[#1170fa] to-[#14f0ef] text-transparent text-sm p-2">
             About Us
           </p>
-          <div className="flex flex-col gap-y-4">
+          <div className="flex flex-col gap-y-4 ">
             <p className="text-white text-[32px] leading-10">
-              A compelling <br />
-              value proposition
+              A compelling value proposition
             </p>
             <p className="text-white text-[12px]">
               LongLifeCoin (LLC) is an open source, Bitcoin-like digital
