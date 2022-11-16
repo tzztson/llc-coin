@@ -1,19 +1,71 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Button from "../../components/button";
+import { useWallet } from "use-wallet2";
+import contractABI from "../../components/abi/5.json";
+import { ethers } from "ethers";
 
 const BuyToken = () => {
-  const [imageSource, setImageSource] = useState<string>(
-    "/assets/images/Ethereum.png"
-  );
+  const wallet = useWallet();
+  const [isChanged, setIsChanged] = useState(true);
+  const [coinAmount, setCoinAmount] = useState(0);
+  const [tokenAmount, setTokenAmount] = useState(0);
 
-  const handleChange = (e: any) => {
-    setImageSource(
-      e.target.value == "ETH"
-        ? "/assets/images/Ethereum.png"
-        : "/assets/images/BNB.png"
-    );
+  const [chainSwitch, setChainSwitch] = useState<any>({
+    whichChain: "",
+    imageSource: "",
+    rpc: "",
+    address: "",
+    abi: "",
+    chainId: "",
+    price: 1500,
+  });
+  const switchNetwork = async () => {
+    if (wallet.ethereum) {
+      const provider = new ethers.providers.Web3Provider(wallet.ethereum);
+      await provider.send("wallet_switchEthereumChain", [
+        { chainId: chainSwitch.chainId },
+      ]);
+    }
   };
+
+  const onCoinChange = (e: any) => {
+    setCoinAmount(e.target.value);
+    setTokenAmount(e.target.value * chainSwitch.price);
+  };
+
+  const onTokenChange = (e: any) => {
+    setTokenAmount(e.target.value);
+    setCoinAmount(e.target.value * chainSwitch.price);
+  };
+
+  useEffect(() => {
+    if (isChanged == true) {
+      setChainSwitch({
+        whichChain: "ETH",
+        imageSource: "/assets/images/ethereum.png",
+        rpc: "https://goerli.infura.io/v3/ca11249dabe247c1a6e0877c24376dda",
+        address: contractABI.presale.address,
+        abi: contractABI.presale.abi,
+        chainId: "0x5",
+        price: 1500,
+      });
+    } else {
+      setChainSwitch({
+        whichChain: "BNB",
+        imageSource: "/assets/images/BNB.png",
+        rpc: "https://bsc-dataseed.binance.org/",
+        address: contractABI.presale.address,
+        abi: contractABI.presale.abi,
+        chainId: "0x61",
+        price: 300,
+      });
+    }
+  }, [isChanged]);
+  useEffect(() => {
+    switchNetwork();
+  }, [chainSwitch]);
+
   return (
     // <div className="sm:rounded-2xl rounded-none my-24 py-4 z-20  flex justify-evenly items-center first-letter:border-[#627eea] bg-gradient-to-r from-[#310056]  to-[#5f5fa7] gap-7 px-12 py-">
     <div className="container mx-auto py-6 px-4">
@@ -31,7 +83,7 @@ const BuyToken = () => {
         <div className="relative grid grid-cols-[minmax(max-content,100px),minmax(auto,1fr)] gap-4">
           <div className="flex flex-wrap items-center gap-x-2">
             <Image
-              src={imageSource}
+              src={chainSwitch.imageSource}
               alt="TFT logo"
               width="40"
               height="40"
@@ -39,7 +91,7 @@ const BuyToken = () => {
             />
             <select
               className="bg-transparent border-none outline-none font-bold"
-              onChange={(e) => handleChange(e)}
+              onChange={(e) => setIsChanged(!isChanged)}
             >
               <option
                 key={"key1"}
@@ -59,6 +111,8 @@ const BuyToken = () => {
             type="text"
             placeholder="0.0"
             className="outline-none bg-transparent text-2xl leading-1 py-4 w-full"
+            value={coinAmount}
+            onChange={onCoinChange}
           />
         </div>
         <div className="flex w-full items-center">
@@ -79,6 +133,8 @@ const BuyToken = () => {
             type="text"
             placeholder="0.0"
             className="outline-none bg-transparent text-2xl leading-1 py-4 w-full"
+            value={tokenAmount}
+            onChange={onTokenChange}
           />
         </div>
         <button
