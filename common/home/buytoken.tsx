@@ -1,16 +1,18 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Button from "../../components/button";
-import { useWallet } from "use-wallet2";
-import contractABI from "../../components/abi/5.json";
+import { chains, useWallet } from "use-wallet2";
+import EthereumcontractABI from "../../components/abi/5.json";
+import BSCcontractABI from "../../components/abi/97.json";
 import { ethers } from "ethers";
 
 const BuyToken = () => {
   const wallet = useWallet();
   const [isChanged, setIsChanged] = useState(true);
+  const [chainId, setChainId] = useState(0);
   const [coinAmount, setCoinAmount] = useState(0);
   const [tokenAmount, setTokenAmount] = useState(0);
-
+  const [coinPrice, setCoinPrice] = useState(0);
   const [chainSwitch, setChainSwitch] = useState<any>({
     whichChain: "",
     imageSource: "",
@@ -18,8 +20,27 @@ const BuyToken = () => {
     address: "",
     abi: "",
     chainId: "",
-    price: 1500,
   });
+
+  const getPrice = async () => {
+    try {
+      if (wallet.ethereum) {
+        const provider = new ethers.providers.JsonRpcBatchProvider(
+          chainSwitch.rpc
+        );
+        const LLCcontract = new ethers.Contract(
+          chainSwitch.address,
+          chainSwitch.abi,
+          provider
+        );
+        let price = await LLCcontract.price();
+        setCoinPrice(price);
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   const switchNetwork = async () => {
     if (wallet.ethereum) {
       const provider = new ethers.providers.Web3Provider(wallet.ethereum);
@@ -27,43 +48,49 @@ const BuyToken = () => {
         { chainId: chainSwitch.chainId },
       ]);
     }
+    setCoinAmount(0);
+    setTokenAmount(0);
   };
 
   const onCoinChange = (e: any) => {
     setCoinAmount(e.target.value);
-    setTokenAmount(e.target.value * chainSwitch.price);
+    setTokenAmount((e.target.value * coinPrice) / 1.5);
   };
 
   const onTokenChange = (e: any) => {
     setTokenAmount(e.target.value);
-    setCoinAmount(e.target.value * chainSwitch.price);
+    setCoinAmount((e.target.value * coinPrice) / 1.5);
   };
 
   useEffect(() => {
-    if (isChanged == true) {
-      setChainSwitch({
-        whichChain: "ETH",
-        imageSource: "/assets/images/ethereum.png",
-        rpc: "https://goerli.infura.io/v3/ca11249dabe247c1a6e0877c24376dda",
-        address: contractABI.presale.address,
-        abi: contractABI.presale.abi,
-        chainId: "0x5",
-        price: 1500,
-      });
-    } else {
-      setChainSwitch({
-        whichChain: "BNB",
-        imageSource: "/assets/images/BNB.png",
-        rpc: "https://bsc-dataseed.binance.org/",
-        address: contractABI.presale.address,
-        abi: contractABI.presale.abi,
-        chainId: "0x61",
-        price: 300,
-      });
+    if (wallet.status == "connected") {
+      if (isChanged == true) {
+        setChainSwitch({
+          whichChain: "ETH",
+          imageSource: "/assets/images/ethereum.png",
+          rpc: "https://goerli.infura.io/v3/ca11249dabe247c1a6e0877c24376dda",
+          address: EthereumcontractABI.presale.address,
+          abi: EthereumcontractABI.presale.abi,
+          chainId: "0x5",
+        });
+      } else {
+        setChainSwitch({
+          whichChain: "BNB",
+          imageSource: "/assets/images/BNB.png",
+          rpc: "https://bsctestapi.terminet.io/rpc",
+          address: BSCcontractABI.presale.address,
+          abi: BSCcontractABI.presale.abi,
+          chainId: "0x61",
+        });
+      }
     }
-  }, [isChanged]);
+  }, [isChanged, wallet.status]);
+
   useEffect(() => {
-    switchNetwork();
+    if (wallet.status == "connected") {
+      switchNetwork();
+      getPrice();
+    }
   }, [chainSwitch]);
 
   return (
@@ -83,7 +110,11 @@ const BuyToken = () => {
         <div className="relative grid grid-cols-[minmax(max-content,100px),minmax(auto,1fr)] gap-4">
           <div className="flex flex-wrap items-center gap-x-2">
             <Image
-              src={chainSwitch.imageSource}
+              src={
+                isChanged
+                  ? "/assets/images/ethereum.png"
+                  : "/assets/images/BNB.png"
+              }
               alt="TFT logo"
               width="40"
               height="40"
