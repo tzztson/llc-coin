@@ -9,6 +9,7 @@ const AboutSection = () => {
             src={"/assets/images/about-token.png"}
             width="100%"
             height="100%"
+            alt=""
           />
         </div>
         <div className="flex flex-col  max-w-[600px]">
@@ -38,6 +39,7 @@ const AboutSection = () => {
           src={"/assets/gifs/rolling-machine.gif"}
           width="480px"
           height="360px"
+          alt=""
         />
       </div>
     </div>

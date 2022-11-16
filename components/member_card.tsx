@@ -25,10 +25,10 @@ const MemberCard = ({ image, name, title }: IProps) => {
   return (
     <>
       <div
-        className={` max-w-[300px] rounded-3xl border-[1px] border-[#fefefe] px-12 py-12 flex flex-col justify-center items-center`}
+        className={`max-w-[300px] rounded-3xl border-[1px] border-[#fefefe] px-12 py-12 flex flex-col justify-center items-center`}
       >
         <div className="mb-8 border-2 rounded-full flex justify-center items-center w-[100px] h-[100px] border-[#656fb5]">
-          <Image src={image} width="80px" height="80px" />
+          <Image src={image} width="80px" height="80px" alt="" />
         </div>
         <p className="text-white mb-2">{name}</p>
         <p className="text-white mb-8">{title}</p>
@@ -38,6 +38,7 @@ const MemberCard = ({ image, name, title }: IProps) => {
               src={"/assets/icons/facebook.png"}
               width="24px"
               height="24px"
+              alt=""
             />
           </div>
           <div className="border-[1px] rounded-lg w-10 h-10 flex items-center justify-center border-[#fefefe]">
@@ -45,6 +46,7 @@ const MemberCard = ({ image, name, title }: IProps) => {
               src={"/assets/icons/twitter.png"}
               width="24px"
               height="24px"
+              alt=""
             />
           </div>
           <div className="border-[1px] rounded-lg w-10 h-10 flex items-center justify-center border-[#fefefe]">
@@ -52,6 +54,7 @@ const MemberCard = ({ image, name, title }: IProps) => {
               src={"/assets/icons/indeed.png"}
               width="24px"
               height="24px"
+              alt=""
             />
           </div>
         </div>

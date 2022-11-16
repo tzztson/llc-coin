@@ -20,12 +20,9 @@ const IntroSection = () => {
         green vegetable juice has the functions of clearing dryness and heat,
         clearing toxins, clearing stool, clearing storage, clearing blood lipids
       </p>
-      <div className=" rounded-md text-white text-lg bg-gradient-to-r from-[#124064] px-10 my-4 lg:my-8 py-3 border-[#1c537b] border-2">
+      <div className="z-100 rounded-md text-white text-lg bg-gradient-to-r from-[#124064] to-[#031a2b] px-10 my-4 lg:my-8 py-3 border-[#1c537b] border-2">
         <span>Get Started</span>
       </div>
-      {/* <div className="absolute bottom-[120px] left-[68px]">
-                <Image src={"/assets/images/nav-ele-coin.png"} width="50px" height="50px" />
-            </div> */}
       <div className="flex items-center justify-center flex-wrap gap-4">
         {purchaseData.map((ele, ind) => {
           return (

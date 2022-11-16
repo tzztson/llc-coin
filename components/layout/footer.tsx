@@ -12,13 +12,28 @@ const Footer = () => {
       </p>
       <div className="flex justify-center items-center gap-8 my-4">
         <div className="border-[1px] border-[#fefefe] rounded-lg w-8  h-8 flex justify-center items-center">
-          <Image src={"/assets/icons/b-facebook.png"} width={18} height={18} />
+          <Image
+            src={"/assets/icons/b-facebook.png"}
+            width={18}
+            height={18}
+            alt=""
+          />
         </div>
         <div className="border-[1px] border-[#fefefe] rounded-lg w-8  h-8 flex justify-center items-center">
-          <Image src={"/assets/icons/b-twitter.png"} width={18} height={18} />
+          <Image
+            src={"/assets/icons/b-twitter.png"}
+            width={18}
+            height={18}
+            alt=""
+          />
         </div>
         <div className="border-[1px] border-[#fefefe] rounded-lg w-8  h-8 flex justify-center items-center">
-          <Image src={"/assets/icons/b-indeed.png"} width={18} height={18} />
+          <Image
+            src={"/assets/icons/b-indeed.png"}
+            width={18}
+            height={18}
+            alt=""
+          />
         </div>
       </div>
       <hr className="w-4/5" />
