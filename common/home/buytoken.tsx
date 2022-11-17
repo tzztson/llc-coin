@@ -5,6 +5,7 @@ import { chains, useWallet } from "use-wallet2";
 import EthereumcontractABI from "../../components/abi/5.json";
 import BSCcontractABI from "../../components/abi/97.json";
 import { ethers } from "ethers";
+import { sign } from "crypto";
 
 const BuyToken = () => {
   const wallet = useWallet();
@@ -93,9 +94,29 @@ const BuyToken = () => {
     }
   }, [chainSwitch]);
 
+  const buyLLC = async () => {
+    try {
+      const provider = new ethers.providers.Web3Provider(wallet.ethereum);
+      const signer = provider.getSigner();
+      const LLCcontract = new ethers.Contract(
+        chainSwitch.address,
+        chainSwitch.abi,
+        signer
+      );
+      let tx = await LLCcontract.buy({
+        value: ethers.utils.parseUnits(coinAmount.toString(), 18),
+      });
+
+      tx.wait();
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     // <div className="sm:rounded-2xl rounded-none my-24 py-4 z-20  flex justify-evenly items-center first-letter:border-[#627eea] bg-gradient-to-r from-[#310056]  to-[#5f5fa7] gap-7 px-12 py-">
     <div className="container mx-auto py-6 px-4">
+      <div className="mt-32"></div>
       <form className="max-w-[512px] grid gap-y-2 bg-transparent border-white border-[1px] rounded-2xl py-4 px-6 shadow-2xl mx-auto text-white">
         <h2 className="mb-1 text-center font-extrabold text-4xl">
           {" "}
@@ -171,14 +192,14 @@ const BuyToken = () => {
         <button
           type="button"
           className="rounded-full text-black-800 dark:text-black-600 bg-blue-700 hover:bg-blue-400 w-full p-4 font-bold rounded-4xl"
-          // className="text-[white] font-bold text-black-800 dark:text-black-600 bg-blue-700 hover:bg-blue-400 p-2  mx-2 rounded-xl"
+          onClick={buyLLC}
         >
           Buy Token
         </button>
       </form>
       <div className="grid gap-y-4 w-lg max-w-full py-10 px-6 mx-auto">
         <button className="text-white hover:underline font-bold">
-          Import TFT Token to Metamask
+          Import LLC Token to Metamask
         </button>
       </div>
     </div>

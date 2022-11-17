@@ -5,6 +5,7 @@ const TeamSection = () => {
   return (
     <div className="my-12px">
       <p className="text-center text-white text-[32px] my-6">Team Members</p>
+      <div className="mt-12"></div>
       <div className="flex flex-col md:flex-row justify-center items-center gap-8 flex-wrap">
         {TeamData.map((ele, index) => {
           const bgColor =
@@ -16,6 +17,7 @@ const TeamSection = () => {
           );
         })}
       </div>
+      <div className="mt-40"></div>
     </div>
   );
 };

@@ -25,7 +25,7 @@ const Effects = () => {
 
   return (
     <div className="flex flex-col items-center px-4">
-      <p className="mt-12"></p>
+      <p className="mt-24"></p>
       <p className="uppercase  bg-clip-text bg-gradient-to-r from-[#1170fa] to-[#14f0ef] text-transparent text-sm p-2">
         Effects
       </p>
@@ -71,6 +71,7 @@ const Effects = () => {
           />
         </div> */}
       </div>
+      <div className="mt-24"></div>
     </div>
   );
 };
