@@ -60,7 +60,7 @@ const BuyToken = () => {
 
   const onTokenChange = (e: any) => {
     setTokenAmount(e.target.value);
-    setCoinAmount((e.target.value * coinPrice) / 1.5);
+    setCoinAmount((e.target.value / coinPrice) * 1.5);
   };
 
   useEffect(() => {
