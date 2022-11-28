@@ -3,7 +3,7 @@ import { FAQData } from "../../types/consts";
 
 const FAQSection = () => {
   return (
-    <div className="my-32">
+    <div className="my-32 ">
       <p className="text-white text-center text-[32px]">
         Frequently Asked Questions
       </p>

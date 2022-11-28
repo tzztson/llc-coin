@@ -11,9 +11,10 @@ import Whitepaper from "./whitepaper";
 const MainPage = () => {
   return (
     <>
-      <AboutSection />
+      {/* <AboutSection />
       <Effects />
-      <Whitepaper />
+      <Whitepaper /> */}
+      {/* <IntroSection /> */}
       <BuyToken />
       <TeamSection />
       <FAQSection />

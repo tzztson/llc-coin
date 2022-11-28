@@ -1,0 +1,47 @@
+🎉Hello, Client!🎉
+Hope you are doing well.
+I have read your job carefully and feel confident to deliver a perfect solution for you.
+I am working for 7+ years in Vue development.
+And then I am very familiar with using the Figma/Zipline/XD/PSD designs.
+I already worked on similar projects to this one and I can finish your project for shortest period.
+
+✨ My skill:
+⚡ HTML, CSS, SASS, Less
+⚡ Material-UI, AntDesign, BootStrap, Responsive Design, Styled Components, Tailwind CSS
+⚡ Typescript
+⚡ React, ReactNative, Redux, Next.js
+⚡ Vue.js, Vuex, Vuetify, Nuxt.js
+⚡ PHP, CodeIgniter, Laravel
+⚡ Apollo-GraphQL
+⚡ Jest unit Test/E2E
+⚡ PostgreSQL, MongoDB, MySQL, FireBase
+⚡ Express, NodeJS
+⚡ Backend Rest API
+⚡ AWS Web Service
+⚡ AWS Elastic Beanstalk/EC2 
+
+✨ Personal Qualities:
+⚡A clean responsive code that will be well displayed in any browser and adapted to any device of any resolution, be it a phone or a tablet, or a widescreen device.
+⚡ Fast response and good communication skills.
+⚡ well-organized/commented code.
+⚡ SEO friendly, semantic markup, and load speed optimization.
+⚡Testing and cross-browser / cross-device compatibility.
+
+✨Service
+⚡Full-time developer (40+ hours per week).
+⚡Meet client requirements.
+⚡Unique and creative designs.
+⚡100% on-time delivery of the product.
+⚡I can work in your time zone. So we will have good communication.
+⚡Update the result every day.
+⚡100% ongoing satisfaction with your project.
+⚡Provide the result with high quality.
+⚡Free Bug-Fix support for 2 months after completion.
+
+I promise the best quality on time and 24 hours communication.
+I am a full-time freelancer, so I work 12+ hours every day and I can work in the weekend, if necessary.
+I will work on your timezone.
+I haven't ever made my employers angry who made a trust on me.
+Please contact me for further discussion.
+
+Thanks.

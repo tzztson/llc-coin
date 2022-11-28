@@ -34,7 +34,7 @@ const BuyToken = () => {
           chainSwitch.abi,
           provider
         );
-        let price = await LLCcontract.price();
+        let price = (await LLCcontract.price()) / 1000000;
         setCoinPrice(price);
       }
     } catch (err) {
@@ -69,10 +69,11 @@ const BuyToken = () => {
         setChainSwitch({
           whichChain: "ETH",
           imageSource: "/assets/images/ethereum.png",
-          rpc: "https://goerli.infura.io/v3/ca11249dabe247c1a6e0877c24376dda",
+          // rpc: "https://goerli.infura.io/v3/ca11249dabe247c1a6e0877c24376dda",
+          rpc: "https://mainnet.infura.io/v3/ca11249dabe247c1a6e0877c24376dda",
           address: EthereumcontractABI.presale.address,
           abi: EthereumcontractABI.presale.abi,
-          chainId: "0x5",
+          chainId: "0x1",
         });
       } else {
         setChainSwitch({
@@ -94,6 +95,40 @@ const BuyToken = () => {
     }
   }, [chainSwitch]);
 
+  const importToken = async () => {
+    const { ethereum } = window;
+    const tokenAddress = chainSwitch.address;
+    const tokenSymbol = "LLC";
+    const tokenDecimals = 18;
+    // const tokenImage =
+    try {
+      if (ethereum) {
+        // wasAdded is a boolean. Like any RPC method, an error may be thrown.
+        const wasAdded = await ethereum.request({
+          method: "wallet_watchAsset",
+          params: {
+            type: "ERC20", // Initially only supports ERC20, but eventually more!
+            options: {
+              address: tokenAddress, // The address that the token is at.
+              symbol: tokenSymbol, // A ticker symbol or shorthand, up to 5 chars.
+              decimals: tokenDecimals, // The number of decimals in the token
+              // image: tokenImage, // A string url of the token logo
+            },
+          },
+        });
+        if (wasAdded) {
+          console.log("Thanks for your interest!");
+        } else {
+          console.log("Your loss!");
+        }
+      } else {
+        alert("Please install metamask.");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   const buyLLC = async () => {
     try {
       const provider = new ethers.providers.Web3Provider(wallet.ethereum);
@@ -103,9 +138,12 @@ const BuyToken = () => {
         chainSwitch.abi,
         signer
       );
-      let tx = await LLCcontract.buy({
-        value: ethers.utils.parseUnits(coinAmount.toString(), 18),
-      });
+      let tx = await LLCcontract.buy(
+        ethers.utils.parseUnits(tokenAmount.toString(), 18),
+        {
+          value: ethers.utils.parseUnits(coinAmount.toString(), 18),
+        }
+      );
 
       tx.wait();
     } catch (err) {
@@ -198,7 +236,10 @@ const BuyToken = () => {
         </button>
       </form>
       <div className="grid gap-y-4 w-lg max-w-full py-10 px-6 mx-auto">
-        <button className="text-white hover:underline font-bold">
+        <button
+          className="text-white hover:underline font-bold"
+          onClick={importToken}
+        >
           Import LLC Token to Metamask
         </button>
       </div>

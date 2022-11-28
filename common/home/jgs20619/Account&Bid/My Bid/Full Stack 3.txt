@@ -1,0 +1,40 @@
+🎉Hello, Hiring Manager, How are you?🎉
+
+I have read your job description carefully and it's very interesting for me.
+I'm a web developer and I have much experience with Frontend & Backend Development & Amazon web service.
+
+🥇My Strong Experiences as follow:
+
+• ReactJS/Redux/React Native/Next.js
+• Vue/Vuex/Vuetify/Nuxt.js
+• AngularJS
+• Typescript
+• PHP(Laravel, CodeIgniter)
+• WordPress
+• HTML/SASS/CSS
+• PostgreSql/Mongo/MySQL Database
+• CSS Framework like BootStrap, Material UI, Semantic UI, etc…
+• NodeJS/Express.js/Nest.js
+• Backend Rest API
+• Video Streaming/Video Conference/Webinar
+• AWS Web Service
+• AWS Elastic Beanstalk/EC2
+• Payment Integration
+• Docker
+• Git & Gitlab & Jira & Trello
+• JIRA, Trelllo, BitBucket, Github, Gitlab
+
+🥇You can see my past projects on these URLs:
+
+https://www.orangetheory.com/en-us/ (React.js, Laravel, MySQL)
+http://www.brescadc.com/ (React.js)
+http://www.romwe.co.in  (Vue.js)
+https://www.rudolfson.com/ (Vue.js, Nuxt.js, Node.js)
+    
+I ensure the highest quality of product and 100% satisfaction through my work.
+I can work in your time zone during work and work more than 40 hours a week.
+I hope really to work with you.
+If you are interested in me, please let us discuss more detail on chat.
+
+Thank you.
+Best regards
