@@ -1,0 +1,23 @@
+✨Hello, Client!✨
+I am a Front-end developer who builds Well-Responsive, Pixel-Perfect, functional, beautiful, dynamic Websites.
+I always keep clean, tidy, easily readable, and maintainable code for delivery and this always helped me to succeed in every job.
+
+Here are my skill sets.
+
+👑[FRONT END]
+★ React, Next.js, Redux, React Hooks, Vue, Nuxt.js, Material UI, Semantic UI, Vuetify
+★ React Native, Flutter, Ionic
+★ Tailwind CSS, Bootstrap, Owl Carousel
+★ ES6+, TypeScript
+★ SASS, Styled-Components
+★ D3.js, Immutable.js, WebGL
+
+👑[BONUS]
+ 🔸 [BLOCKCHAIN]
+  ★ Ethereum/Polygon/Solana/Algorand/Rust/Defi/Solidity/Web3.js/Ethers.js
+ 🔸 [BACK END]
+  ★ Node.js, Express, Nest, Laravel, Python, Golang
+ 🔸 [DATABASE]
+  ★ MongoDB, MySQL, PostgreSQL, GraphQL, Firebase, Redis
+
+Just let me know if you want to build any type of website.

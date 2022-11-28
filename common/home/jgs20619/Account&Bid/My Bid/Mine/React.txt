@@ -1,0 +1,13 @@
+Hello, there, Hope you are doing well.
+I just read your job posting carefully and it seems like great fit for me.
+Why?
+First, I'm Sr Web developer have 6+ years web development who has rich experience in React.js.
+Second, I am really familiar with React basic concepts and flow of project.
+React.js is an open-source JavaScript library that is used for building UI(user interface)s specifically for SPA(single-page application)s.
+React allows developers to create large web applications that can change data, without reloading the page. The main purpose of React is to be fast, scalable, and simple.
+So I studied eagerly about React.js in my last career and made lots of websites using this.
+The one of my representatives is https://shoclef.com/.
+This site is made by Next.js that is react framework for SSR(server side rendering).
+I can deliver 100% of perfect result within deadline that you determined.
+I hope to discuss with you to reduce work time and clear understanding about project.
+Best regards.

@@ -1,0 +1,27 @@
+🎉Hello, Client!🎉
+
+I am a full-stack developer with over 6 years of experience in web development.
+Specially I am very familiar with Node.js and React, Vue.js projects. 
+I can convey good code quality to you with Typescript. 
+And then for the several types of databases such as MongoDB, PostgreSQL, MySQL, I am an expert.
+
+My main expert skills are following:
+⭐ Frontend
+🔸 React, Vue, Angular, Next, Nuxt, Redux, Vuex, Rx.js. Vuetify
+🔸 Tailwind, CSS, Bootstrap, MaterialUI
+🔸 React Native
+🔸 three.js, PixiJS, Phaser
+
+⭐ Backend
+🔸 Node.js, ExpressJS, Typescript, Python, Django, Flask, Bottle, Laravel, Codeignitor
+🔸 PostgreSQL, MySQL, MongoDB, TypeORM, Sequelize
+🔸 GCP, AWS, Google Firebase
+🔸 Github, Bitbucket
+🔸 Jira, Trello
+🔸 Jenkins
+🔸 RESTful, GraphQL (Apollo)
+🔸 Mocha/Chai
+
+⭐ Blockchain/Cryptocurrency
+🔸 Blockchain, NFT-marketplace, web3.js,
+🔸 Solidity, Solana, Algorand, Polygon, Truffle

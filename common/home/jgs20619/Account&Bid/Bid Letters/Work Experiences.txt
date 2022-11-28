@@ -1,0 +1,141 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Frontend Engineer at Shopee
+---
+Sea is an internet platform company, focused on in Greater Southeast Asia, a region that includes Indonesia, Taiwan, Vietnam, Thailand, the Philippines, Malaysia and Singapore.
+Shopee is an e-commerce platform company under Sea Group.
+---
+My key responsibilities are:
+- Develop performant and optimized web applications
+- Build and upgrade internal tools and libraries to improve developer experience
+- Advocate new technologies and best practices within the team
+My key contributions are:
+- Built a rich set of development tools to improve developer experience (DX), such as chrome extension, cli tools, custom CI pipeline
+- Set up performance metrics monitoring platform
+- Upgraded React 16 and migrated legacy code
+- Optimized webpack bundle size to reduce load time
+Technology used:
+- React, Redux, Flow Type, webpack, Jest, puppeteer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ninja Van is Southeast Asia’s fastest growing last-mile logistics company.
+
+- Lead in implementing style guide on React powered frontend portal. Built a suite of reusable React directives and a set of Sass utility functions.
+- Lead and developed a React powered consumer web application within 3 months from scratch.
+
+Technology used:
+- Frontend: React Native, React, React Router, Redux, Redux Saga, webpack, AngularJS, CSS, SCSS
+- Backend: Node.js, Asp.Net, Django, Lombok, Jackson, MySQL
+- Tools: Git, Jira, Bamboo, BitBucket
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Worked in a development team across 2 nations, Singapore and Indonesia.
+- Developed Healthy Living@SG mobile app for both Android and iOS platform in collaboration with Health Promotion Board Singapore.
+- Libraries and frameworks involved: Appcelerator Titanium SDK, CommonJS, underscore.js, moment.js, async.js, TiLogCatcher.
+- Tools used: Titanium Studio, Git, SimPholders, Liya, adb
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+• Implemented back-end technologies like RDBMS, MySQL and JDBC.
+• Designed CSS based page layouts that are cross-browser compatible and standards-compliant.
+• Responsible for implementing and development of the web pages from mock- ups.
+• Involved in Core Java coding by using Java APIs such as Collections, Exception Handling, Generics,
+Enumeration, and Java I/O to fulfill the implementation of business logic.
+• Participated in development of a well responsive single page application using React framework.
+• Deep understanding and hands on experience in various stages of SDLC including direct client
+communication, requirement gathering and involvement in enterprise design.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+• Working knowledge of front-end optimization and performance techniques
+• Build, design and create robust prompt page interface from IBM Cognos framework into Angular 9 framework
+• Enable Analysts and Developers from ABCBS’s +120 customer companies to search insurance plans of their employees and to generate reports for analysis (e.g. cost analysis, insurance price analysis, etc.)
+• Serve as an active role in structuring single page applications to make easy to maintain
+• Work independently and report the progress to Team Leader, including design recommendations on feedback
+• Become familiar with promotion requests from development environment until production environment.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+• Developed websites using JavaScript, Gatsby, GraphQL, React, PHP, WordPress, Shopify, and WooCommerce
+~~~~~~~~~~~~~~~~~~~
+• Responsible for the development of new software products, from wireframe to successful deployment
+• Utilize React.js, Vue.js, Node.js, Netlify, FaunaDB, FQL, and PHP to implement scalable full-stack software solutions
+• Interview candidates and evaluate technical assessments
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+• Developed websites, web services, and applications using JavaScript, Node.js, React, Gatsby, GraphQL, PHP, SQL, and Liquid
+• Maintain and update existing sites and applications to fix bugs, improve UI, SEO, and performance
+• Modernize tooling
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+• Responsible for front end (React) and back end (PHP) development for a mobile/desktop application that is used by UCI campus bus drivers and administrative staff for scheduling
+• Created design concepts and adjusted design elements to address user interface (UI) and user experience (UX)
+• Reviewed the existing database, built database schema, and wrote SQL queries to retrieve and manipulate data
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Designed and implemented a maintenance calendar allowing mechanics and administrators to track and schedule aircraft maintenance items
+- Took initiative in creating a cleaner code base by establishing a more suitable separation between back-end and front-end functionality
+- Focused on establishing a simple and responsive application therefore producing an improved user-experience
+- Integrated React into the existing codebase allowing for easier development of complex features and better code organization
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Node.js and frontend Javascript. Design of an admin interface for a content management system, backed by a REST-like API. Improved the broader Node.js Lambda based API.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Built reusable, maintainable device fixing portal configurable to other business models
+- Added report feature to show customers car fixing process.
+- Taking leadership role on a project
+- Fixing bugs on main website
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+• Worked on the ERC 20 based smart contracts with Solidity
+• Worked on Yield Farming and DEX projects.
+• Built and audited NFTs for lottery tickets.
+• Crypto payment for NFT using Web3.js
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+• Created the core module of the decentralized financial platform with javascript, python,
+Solidity, and Cryptocurrency exchange.
+• Achieved the Blockchain hard and soft fork with C++ and increased the
+performance by 130% and presented the architecture.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+• Implemented a Single Page Web Applications (SPA) based front end for displaying
+user requests, user records history and security settings various users using
+JavaScript and Angular JS.
+• Created forms to collect and validate data from the user using AngularJS, jQuery
+and JavaScript
+• Used D3.js to create company specific reporting tool.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+• Web application that provides access to stream unlimited workout videos from
+leading boutique studios
+• Improved app performance by building and refactoring reusable components
+• Increased accessibility by implementing responsive design to match mock-ups
+• Technologies: React, Redux
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+• Coordinated with remote clients and developers for the design and development of
+various projects.
+• Built Chrome Extension from the scratch and also worked on the enhancement of
+existing extensions.
+• Implemented Regular Expression Based Parser for identifying the email and phone of
+an individual anywhere on their profile page.
+• Integrated Email Hunter API for searching and predicting an individual's email based on
+the company email structure.
+• Created Rest API using Google App Script to push data into Google Spreadsheets
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+• Responsible for front end (React) and back end (Nest) development for a mobile/desktop application that is used by UCI campus bus drivers and administrative staff for scheduling
+• Created design concepts and adjusted design elements to address user interface (UI) and user experience (UX)
+• Reviewed the existing database, built database schema, and wrote SQL queries to retrieve and manipulate data
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+• Designing a modern web development(using HTML5, CSS, JavaScript, Angular and React)
+• Develop in SPAweb Development using React, Redux + TypeScript 
+• Cooperating with a Designer team in the process of building the rich and innovative user experience
+• Worked with modules like MongoDB and mongoose for database persistence using Node.js to interact with MongoDB.
+• Working in continuous delivery and test-driven development including writing unit tests, performing code reviews, etc.
+• Involved Webpack as a module bundler to preprocess and minify different files such as TypeScript and SASS files.
+• Successfully develop and deploy code/features, multiple times, while working in an Agile environment
+• Identified and resolved technical issues to maximize performance by gathering complete requirements.

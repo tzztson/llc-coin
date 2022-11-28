@@ -1,6 +1,6 @@
 {
     "token": {
-        "address": "0x5d19c415B9b0B2747f3F23a60A8868Cf0dFD890c",
+        "address": "0x58f5d21AC67714E5A1D8547198B6e73081fdB567",
         "abi": [
             {
                 "inputs": [
@@ -304,7 +304,7 @@
         ]
     },
     "presale": {
-        "address": "0x3DAd764B069D84C8b6d18f375F24A00810771d22",
+        "address": "0xea00277De5205704026C70aB09a095C21b85eB6E",
         "abi": [
             {
                 "inputs": [
@@ -387,7 +387,13 @@
                 "type": "fallback"
             },
             {
-                "inputs": [],
+                "inputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "tokenAmount",
+                        "type": "uint256"
+                    }
+                ],
                 "name": "buy",
                 "outputs": [],
                 "stateMutability": "payable",
