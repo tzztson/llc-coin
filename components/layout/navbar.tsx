@@ -57,7 +57,7 @@ const Navbar = () => {
                 <ul className="my-4 space-y-3">
                   <li>
                     <span
-                      className=" cursor-pointer flex items-center p-3 text-base font-bold text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                      className="flex items-center p-3 text-base font-bold text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                       onClick={() => wallet.connect("injected")}
                     >
                       <Image
@@ -67,7 +67,7 @@ const Navbar = () => {
                         alt=""
                       />
 
-                      <span className="flex-1 ml-3 whitespace-nowrap text-lg pl-2 text-gray-700">
+                      <span className="text-gray-700 flex-1 ml-3 whitespace-nowrap text-lg pl-2">
                         MetaMask
                       </span>
                       <span className="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-sm font-medium text-gray-500 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400">
@@ -78,7 +78,7 @@ const Navbar = () => {
                   <li>
                     <span
                       onClick={() => wallet.connect("walletlink")}
-                      className="cursor-pointer flex items-center p-3 text-base font-bold text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                      className="flex items-center p-3 text-base font-bold text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                     >
                       <Image
                         src={"/assets/images/coinbase.svg"}
@@ -86,7 +86,7 @@ const Navbar = () => {
                         height={40}
                         alt=""
                       />
-                      <span className="flex-1 ml-3 whitespace-nowrap text-lg pl-2 text-gray-700">
+                      <span className="text-gray-700 flex-1 ml-3 whitespace-nowrap text-lg pl-2">
                         Coinbase Wallet
                       </span>
                     </span>
@@ -94,7 +94,7 @@ const Navbar = () => {
                   <li>
                     <span
                       onClick={() => wallet.connect("walletconnect")}
-                      className="cursor-pointer flex items-center p-3 text-base font-bold text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                      className="flex items-center p-3 text-base font-bold text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                     >
                       <Image
                         src={"/assets/images/wallet-connect.svg"}
@@ -102,7 +102,7 @@ const Navbar = () => {
                         height={40}
                         alt=""
                       />
-                      <span className="flex-1 ml-3 whitespace-nowrap text-lg pl-2 text-gray-700">
+                      <span className="text-gray-700 flex-1 ml-3 whitespace-nowrap text-lg pl-2">
                         WalletConnect
                       </span>
                     </span>
@@ -110,7 +110,7 @@ const Navbar = () => {
                   <li>
                     <span
                       onClick={() => wallet.connect("portis")}
-                      className="cursor-pointer flex items-center p-3 text-base font-bold text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                      className="flex items-center p-3 text-base font-bold text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                     >
                       <Image
                         src={"/assets/images/fortmatic.svg"}
@@ -118,7 +118,7 @@ const Navbar = () => {
                         height={40}
                         alt=""
                       />
-                      <span className="flex-1 ml-3 whitespace-nowrap text-lg pl-2 text-gray-700">
+                      <span className="text-gray-700 flex-1 ml-3 whitespace-nowrap text-lg pl-2">
                         Fortmatic
                       </span>
                     </span>
