@@ -1,11 +1,15 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Button from "../../components/button";
-import { chains, useWallet } from "use-wallet2";
+import { useWallet } from "use-wallet2";
 import EthereumcontractABI from "../../components/abi/5.json";
 import BSCcontractABI from "../../components/abi/97.json";
 import { ethers } from "ethers";
-import { sign } from "crypto";
+import { loadStripe } from "@stripe/stripe-js";
+
+const stripePromise = loadStripe(
+  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+);
 
 const BuyToken = () => {
   const wallet = useWallet();
@@ -62,6 +66,20 @@ const BuyToken = () => {
     setTokenAmount(e.target.value);
     setCoinAmount((e.target.value / coinPrice) * 1.5);
   };
+
+  useEffect(() => {
+    // Check to see if this is a redirect back from Checkout
+    const query = new URLSearchParams(window.location.search);
+    if (query.get("success")) {
+      console.log("Order placed! You will receive an email confirmation.");
+    }
+
+    if (query.get("canceled")) {
+      console.log(
+        "Order canceled -- continue to shop around and checkout when you’re ready."
+      );
+    }
+  }, []);
 
   useEffect(() => {
     if (wallet.status == "connected") {
@@ -152,18 +170,14 @@ const BuyToken = () => {
   };
 
   return (
-    // <div className="sm:rounded-2xl rounded-none my-24 py-4 z-20  flex justify-evenly items-center first-letter:border-[#627eea] bg-gradient-to-r from-[#310056]  to-[#5f5fa7] gap-7 px-12 py-">
     <div className="container mx-auto py-6 px-4">
       <div className="mt-32"></div>
       <form className="max-w-[512px] grid gap-y-2 bg-transparent border-white border-[1px] rounded-2xl py-4 px-6 shadow-2xl mx-auto text-white">
         <h2 className="mb-1 text-center font-extrabold text-4xl">
           {" "}
-          Join LLC Presale{" "}
+          Buy LLC using Crypto
         </h2>
-        <div className="text-center font-bold mb-1">
-          {" "}
-          LLC Finance Presale Stage{" "}
-        </div>
+        <div className="text-center font-bold mb-1"> LLC Finance Stage </div>
         <div className="text-center font-bold mb-1"></div>
         <p className="mb-3 text-center font-xl text-2x1"></p>
         <div className="relative grid grid-cols-[minmax(max-content,100px),minmax(auto,1fr)] gap-4">
@@ -243,6 +257,28 @@ const BuyToken = () => {
           Import LLC Token to Metamask
         </button>
       </div>
+      <form action="/api/checkout_sessions" method="POST">
+        <p className="text-center font-bold text-[32px] py-4">
+          Buy LLC token using your card{" "}
+        </p>
+        <section className="flex justify-center items-center sm:flex-row sm:gap-4 flex-col gap-4">
+          <div className="flex justify-center items-center">
+            <input
+              type="text"
+              className="w-24 text-right outline-none border-b-[1px] border-white bg-transparent text-2xl leading-1 py-4 px-4"
+              name="amount"
+              placeholder="0"
+            />
+            <p className="mx-3 pr-12 text-2xl">X 1.5$ (USD)</p>
+          </div>
+          <button
+            type="submit"
+            className="rounded-full text-black-800 dark:text-black-600 bg-blue-700 min-w-[200px] hover:bg-blue-400  p-4 font-bold rounded-4xl"
+          >
+            Buy Token
+          </button>
+        </section>
+      </form>
     </div>
     // </div>
   );
