@@ -18,6 +18,11 @@ body {
   background-color: #060A21
 }
 
+.swiper {
+  width: 88%;
+  height: 100%;
+}
+
 div, p {
   padding: 0px;
   margin: 0px;
@@ -47,5 +52,30 @@ a {
   body {
     color: white;
     background: black;
+  }
+}
+
+
+.mySwiper > div:first-child{
+    height: 400px;
+}
+
+.swiper-slide {
+  height: 200px;
+  font-size: 18px;
+}
+.swiper-container {
+  width: 480px;
+}
+
+@media screen and (min-width: 640px) {
+  .swiper-container {
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
   }
 }

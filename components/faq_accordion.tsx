@@ -10,9 +10,9 @@ const FAQAccordion = ({ title, content }: IProps) => {
     setIsOpen(!isopen);
   };
   return (
-    <div className="flex flex-col py-2  items-center justify-center mx-4">
+    <div className="flex flex-col py-2  items-center justify-start w-full">
       <div
-        className="h-16 p-4 bg-[#14173c] w-[320px]  rounded flex justify-between items-center"
+        className="h-16 p-4 bg-[#14173c] w-full  rounded flex justify-between items-center"
         onClick={handleClick}
       >
         <h4 className="font-medium text-sm text-white">{title}</h4>
@@ -33,7 +33,7 @@ const FAQAccordion = ({ title, content }: IProps) => {
           </svg>
         </div>
       </div>
-      <div className={!isopen ? "hidden" : "w-[320px]  bg-[#a3a7da] p-4"}>
+      <div className={!isopen ? "hidden" : " h-24 bg-[#a3a7da] p-4"}>
         <h4 className="text-sm text-white">{content}</h4>
       </div>
     </div>

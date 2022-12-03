@@ -1,5 +1,6 @@
 import MemberCard from "../../components/member_card";
 import { TeamData } from "../../types/consts";
+import Image from "next/image";
 
 const TeamSection = () => {
   return (

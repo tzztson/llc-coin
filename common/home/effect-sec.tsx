@@ -6,13 +6,13 @@ const Effects = () => {
   return (
     <div className="flex flex-col items-center px-4">
       <p className="mt-24"></p>
-      <p className="uppercase  bg-clip-text bg-gradient-to-r from-[#1170fa] to-[#14f0ef] text-transparent text-sm p-2">
+      <p className="uppercase text-xl bg-clip-text bg-gradient-to-r from-[#1170fa] to-[#14f0ef] text-transparent  p-2">
         Effects
       </p>
-      <p className="text-white text-[30px] text-center">
+      <p className="text-white text-[30px] text-center font-bold">
         Effect of Fruits and Vegetables
       </p>
-      <p className="text-white text-[12px] text-center">
+      <p className="text-white text-xl text-center">
         Five kinds of green vegetables, such as bitter gourd, cucumber, green
         pepper, celery and apple, have their own effects.
       </p>
