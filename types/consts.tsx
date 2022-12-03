@@ -59,11 +59,6 @@ export const TeamData = [
     title: "Lead Designer",
     image: "/assets/images/face3.png",
   },
-  {
-    name: "Joseph Rubin",
-    title: "CMO",
-    image: "/assets/images/face1.png",
-  },
 ];
 
 export const FAQData = [

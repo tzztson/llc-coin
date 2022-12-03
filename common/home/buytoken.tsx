@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Button from "../../components/button";
 import { useWallet } from "use-wallet2";
 import EthereumcontractABI from "../../components/abi/5.json";
 import BSCcontractABI from "../../components/abi/97.json";
@@ -97,10 +96,10 @@ const BuyToken = () => {
         setChainSwitch({
           whichChain: "BNB",
           imageSource: "/assets/images/BNB.png",
-          rpc: "https://bsctestapi.terminet.io/rpc",
+          rpc: "https://bsc-dataseed1.binance.org",
           address: BSCcontractABI.presale.address,
           abi: BSCcontractABI.presale.abi,
-          chainId: "0x61",
+          chainId: "0x38",
         });
       }
     }

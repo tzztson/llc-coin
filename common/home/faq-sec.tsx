@@ -7,11 +7,11 @@ const FAQSection = () => {
       <p className="text-white text-center text-[32px]">
         Frequently Asked Questions
       </p>
-      <div className="flex">
+      <div className="flex justify-center items-center container mx-auto px-2">
         {/* <div className="self-end">
                     <Image src={"/assets/images/buy-above-icon.png"} width="150%" height="150%" />
                 </div> */}
-        <div className="my-6 flex flex-wrap  justify-center items-start">
+        <div className="grid xl:grid-cols-3 gap-4 lg:grid-cols-2">
           {FAQData.map((ele, ind) => {
             return (
               <FAQAccordion title={ele.title} content={ele.content} key={ind} />
